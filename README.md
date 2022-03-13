@@ -1,6 +1,9 @@
 # Semver Validate Action
 
 The following action simply validates a variable and returns on a bool.
+
+[![semantic-validate-action](https://github.com/conradj3/semver-validate-action/actions/workflows/validate-semantic.yml/badge.svg)](https://github.com/conradj3/semver-validate-action/actions/workflows/validate-semantic.yml)
+
 ## Inputs
 
 ## `semver-input`
