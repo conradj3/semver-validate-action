@@ -17,21 +17,21 @@ Bool returning `true` or `false`
 
 ***[TRUE RETURN]***
 ```yaml
-uses: conradj3/semver-validate-action@v1.0.0
+uses: conradj3/semver-validate-action@v1.0.1
 with:
   semver-input: '1.2.3'
 ```
 
 
 ```yaml
-uses: conradj3/semver-validate-action@v1.0.0
+uses: conradj3/semver-validate-action@v1.0.1
 with:
   semver-input: 'v1.2.3'
 ```
 
 ***[FALSE RETURN]***
 ```yaml
-uses: conradj3/semver-validate-action@v1.0.0
+uses: conradj3/semver-validate-action@v1.0.1
 with:
   semver-input: 'abc'
 ```
