@@ -1,0 +1,31 @@
+name: semantic-validate-example
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+  
+jobs:
+  valid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/semver-validate-action@v1.0.0
+        with:
+          semver-input: '1.2.3'
+      - uses: actions/semver-validate-action@v1.0.0
+        with:
+          semver-input: 'v1.2.3'
+  not-valid:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/semver-validate-action@v1.0
+        with:
+          semver-input: 'abc'
+      - uses: actions/semver-validate-action@v1.0
+        with:
+          semver-input: 'a.b.c'
+
