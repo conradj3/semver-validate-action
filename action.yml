@@ -1,0 +1,13 @@
+name: "Semantic Validate"
+description: "Validate a Semantic Version string and return bool."
+inputs:
+  semver-input: # id of input
+    description: "Input passed in from variable to validate a true semantic version."
+    required: true
+    default: "0.0.1"
+outputs:
+  isSemver: # id of output
+    description: "Returns bool for validate Semantic input received."
+runs:
+  using: "node16"
+  main: "dist/index.js"
