@@ -9,7 +9,7 @@ try {
 
   // Validate Semantic version.
   var ret = isSemver(semVer);
-
+  console.log(`-> Semantic version validation ${ret}!`);
   // Return GitHub output.
   core.setOutput("isSemver", ret);
 
