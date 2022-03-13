@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/semver-validate-action@v1.0.0
+      - uses: actions/semver-validate-action@v1.0
         with:
           semver-input: '1.2.3'
-      - uses: actions/semver-validate-action@v1.0.0
+      - uses: actions/semver-validate-action@v1.0
         with:
           semver-input: 'v1.2.3'
   not-valid:
