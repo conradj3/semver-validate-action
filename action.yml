@@ -1,4 +1,5 @@
 name: "Semantic Validate"
+author: conradj3
 description: "Validate a Semantic Version string and return bool."
 inputs:
   semver-input: # id of input
@@ -11,3 +12,6 @@ outputs:
 runs:
   using: "node16"
   main: "dist/index.js"
+branding:
+  icon: "check-circle"
+  color: "green"
