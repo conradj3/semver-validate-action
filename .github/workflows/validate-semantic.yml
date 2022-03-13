@@ -13,19 +13,30 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: conradj3/semver-validate-action@v1.0.1
+        id: test1
         with:
           semver-input: '1.2.3'
+      - name: Display Semver output variable
+        run: echo "Semver step valided to ${{ steps.test1.outputs.is_Semver }}"
       - uses: conradj3/semver-validate-action@v1.0.1
+        id: test2
         with:
           semver-input: 'v1.2.3'
+      - name: Display Semver output variable
+        run: echo "Semver step valided to ${{ steps.test2.outputs.is_Semver }}"
   not-valid:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: conradj3/semver-validate-action@v1.0.1
+        id: test1
         with:
           semver-input: 'abc'
+      - name: Display Semver output variable
+        run: echo "Semver step valided to ${{ steps.test1.outputs.is_Semver }}"
       - uses: conradj3/semver-validate-action@v1.0.1
+        id: test2
         with:
           semver-input: 'a.b.c'
-
+      - name: Display Semver output variable
+        run: echo "Semver step valided to ${{ steps.test1.outputs.is_Semver }}"
