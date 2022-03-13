@@ -6,9 +6,9 @@ The following action simply validates a variable and returns on a bool.
 
 ## Inputs
 
-## `semver-input`
+## `semver-input` **Required**
 
-**Required** Receives type ANY to validate against Semantic Version formatting.
+ Receives type ANY to validate against Semantic Version formatting.
 
 ## Outputs
 
