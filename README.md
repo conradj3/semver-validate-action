@@ -12,7 +12,7 @@ The following action simply validates a variable and returns on a bool.
 
 ## Outputs
 
-## `is_Semver`
+## `isSemver`
 
 Bool returning `true` or `false`
 
